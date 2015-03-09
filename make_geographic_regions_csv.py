@@ -152,3 +152,6 @@ for rdat in all_regions:
 
 open(sfn, 'w').write(json.dumps(schema, indent=4))
 print "Wrote schema to %s" % sfn
+
+print "Load this into BigQuery using a command like:"
+print "bq load --skip_leading_rows=1 --replace --project_id PROJECT_ID geocode.geographic_regions_by_country geographic_regions_by_country.csv geographic_regions_by_country-schema.json"
