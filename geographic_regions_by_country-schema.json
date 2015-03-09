@@ -21,7 +21,7 @@
     }, 
     {
         "type": "STRING", 
-        "name": "un_rgion", 
+        "name": "un_region", 
         "description": "UN defined sub-continent major geographic regions"
     }, 
     {
