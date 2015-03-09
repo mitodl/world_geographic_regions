@@ -1,0 +1,42 @@
+[
+    {
+        "type": "STRING", 
+        "name": "cc", 
+        "description": "ISO two-letter country code"
+    }, 
+    {
+        "type": "INTEGER", 
+        "name": "code", 
+        "description": "UN country code number"
+    }, 
+    {
+        "type": "STRING", 
+        "name": "name", 
+        "description": "UN designated country full name"
+    }, 
+    {
+        "type": "STRING", 
+        "name": "continent", 
+        "description": "UN defined Continents files: Africa.csv,Americas.csv,Asia.csv,Europe.csv,Oceania.csv"
+    }, 
+    {
+        "type": "STRING", 
+        "name": "un_rgion", 
+        "description": "UN defined sub-continent major geographic regions"
+    }, 
+    {
+        "type": "STRING", 
+        "name": "econ_group", 
+        "description": "UN defined major geographical economic groups (developing and developed nations) files: Developed regions.csv,Developing_Nations.csv"
+    }, 
+    {
+        "type": "STRING", 
+        "name": "developing_nation", 
+        "description": "UN defined developing nation groups files: Least developed countries.csv"
+    }, 
+    {
+        "type": "STRING", 
+        "name": "special_region1", 
+        "description": "Special Regions Set 1 files: Latin America and the Caribbean.csv,Sub-Saharan-Africa.csv"
+    }
+]
