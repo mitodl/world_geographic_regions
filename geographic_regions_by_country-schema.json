@@ -16,13 +16,13 @@
     }, 
     {
         "type": "STRING", 
-        "name": "continent", 
-        "description": "UN defined Continents files: Africa.csv,Americas.csv,Asia.csv,Europe.csv,Oceania.csv"
+        "name": "un_region", 
+        "description": "UN defined sub-continent major geographic regions"
     }, 
     {
         "type": "STRING", 
-        "name": "un_region", 
-        "description": "UN defined sub-continent major geographic regions"
+        "name": "continent", 
+        "description": "UN defined Continents files: Americas.csv,Europe.csv,Asia.csv,Africa.csv,Oceania.csv"
     }, 
     {
         "type": "STRING", 

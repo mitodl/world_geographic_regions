@@ -14,40 +14,47 @@
 import sys
 import json
 import unicodecsv as csv
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 
 ofn = "geographic_regions_by_country.csv"
 
 #-----------------------------------------------------------------------------
 
-continents = ['data/Countries_in_Africa.csv',
+continents = [
               'data/Countries_in_Americas.csv',
-              'data/Countries_in_Asia.csv',
               'data/Countries_in_Europe.csv',
+              'data/Countries_in_Asia.csv',
+              'data/Countries_in_Africa.csv',
               'data/Countries_in_Oceania.csv',
 ]
 
-un_regions = ['data/Countries_in_Caribbean.csv',
+un_regions = [
+           # americas
+           'data/Countries_in_Northern America.csv',
+           'data/Countries_in_South America.csv',
            'data/Countries_in_Central America.csv',
+           # europe
+           'data/Countries_in_Northern Europe.csv',
+           'data/Countries_in_Western Europe.csv',
+           'data/Countries_in_Eastern Europe.csv',
+           'data/Countries_in_Southern Europe.csv',
+           # asia
+           'data/Countries_in_South-Eastern Asia.csv',
            'data/Countries_in_Central Asia.csv',
            'data/Countries_in_Eastern Africa.csv',
            'data/Countries_in_Eastern Asia.csv',
-           'data/Countries_in_Eastern Europe.csv',
+           'data/Countries_in_Southern Asia.csv',
+           'data/Countries_in_Western Asia.csv',
+           # africa
+           'data/Countries_in_Northern Africa.csv',
+           'data/Countries_in_Middle Africa.csv',
+           'data/Countries_in_Southern Africa.csv',
+           'data/Countries_in_Western Africa.csv',
+           # oceania
            'data/Countries_in_Melanesia.csv',
            'data/Countries_in_Micronesia.csv',
-           'data/Countries_in_Middle Africa.csv',
-           'data/Countries_in_Northern Africa.csv',
-           'data/Countries_in_Northern America.csv',
-           'data/Countries_in_Northern Europe.csv',
            'data/Countries_in_Polynesia.csv',
-           'data/Countries_in_South America.csv',
-           'data/Countries_in_South-Eastern Asia.csv',
-           'data/Countries_in_Southern Africa.csv',
-           'data/Countries_in_Southern Asia.csv',
-           'data/Countries_in_Southern Europe.csv',
-           'data/Countries_in_Western Africa.csv',
-           'data/Countries_in_Western Asia.csv',
-           'data/Countries_in_Western Europe.csv',
+           'data/Countries_in_Caribbean.csv',
 ]
 
 econ_groups = [
@@ -68,7 +75,7 @@ special_regions1 = [
 
 #-----------------------------------------------------------------------------
 
-countries = {}
+countries = OrderedDict()
 
 def mark_countries_in_region(fn, colname):
     '''
@@ -90,12 +97,13 @@ def mark_countries_in_region(fn, colname):
 
 fields = ['cc', 'code', 'name']
 
-all_regions = [{'region_name': 'UN defined Continents',
-                'files': continents,
-                'colname': 'continent'},
+all_regions = [
                {'region_name': 'UN defined sub-continent major geographic regions',
                 'files': un_regions,
                 'colname': 'un_region'},
+               {'region_name': 'UN defined Continents',
+                'files': continents,
+                'colname': 'continent'},
                {'region_name': 'UN defined major geographical economic groups (developing and developed nations)',
                 'files': econ_groups,
                 'colname': 'econ_group'},
