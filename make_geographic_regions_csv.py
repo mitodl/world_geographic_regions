@@ -55,6 +55,7 @@ un_regions = [
            'data/Countries_in_Micronesia.csv',
            'data/Countries_in_Polynesia.csv',
            'data/Countries_in_Caribbean.csv',
+           'data/Countries_in_Australia and New Zealand.csv',
 ]
 
 econ_groups = [
