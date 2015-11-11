@@ -235,6 +235,6 @@ SX,534,Sint Maarten (Dutch part),Caribbean,Americas,Developing_Nations,,Latin Am
 TT,780,Trinidad and Tobago,Caribbean,Americas,Developing_Nations,,Latin America and the Caribbean
 TC,796,Turks and Caicos Islands,Caribbean,Americas,Developing_Nations,,Latin America and the Caribbean
 VI,850,Virgin Islands,Caribbean,Americas,Developing_Nations,,Latin America and the Caribbean
-AU,036,Australia,,Oceania,Developed regions,,
-NZ,554,New Zealand,,Oceania,Developed regions,,
-NF,574,Norfolk Island,,Oceania,Developing_Nations,,
+AU,036,Australia,Australia and New Zealand,Oceania,Developed regions,,
+NZ,554,New Zealand,Australia and New Zealand,Oceania,Developed regions,,
+NF,574,Norfolk Island,Australia and New Zealand,Oceania,Developing_Nations,,
